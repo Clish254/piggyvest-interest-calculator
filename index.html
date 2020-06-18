@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piggyvest interest calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="toolbar">
+        <ul>
+            <li class="logo"><h1><b>piggyvest</b></h1></li>
+        </ul>
+    </div>   
+    <h2>This is an interest calculator for piggyvest's safe lock saving plan.</h2>
+    <p>SafeLock is a fixed savings option that allows you to earn up to 15.5% per annum, usually paid up front. Your Safelock acts as your sub-account so that you can transfer and lock funds from your Piggybank wallet or your debit card for at least 10 days, without access to these funds until maturity. Safelock interests are prorated and paid for the duration you set.</p>
+    <h3>Let's calculate your interest!</h3>
+    <div class="card">
+        <form action="http://localhost:3000/api/subscribers" method="post">
+            <ul>
+                <li>
+                    <label for="principal">How much will you save?:</label><br>
+                    <input type="text" class="principal" id="principal" name="principal" required>
+                </li>
+                 <li>
+                    <label for="duration-select">How long would you save for?</label><br>
+                    <select name="plan" id="duration-select">
+                        <option value='1'>1month</option>
+                        <option value='2'>2months</option>
+                        <option value='3'>3months</option>
+                        <option value='4'>4months</option>
+                        <option value='5'>5months</option>
+                        <option value='6'>6months</option>
+                        <option value='7'>7months</option>
+                        <option value='8'>8months</option>
+                        <option value='9'>9months</option>
+                        <option value='10'>10months</option>
+                        <option value='11'>11months</option>
+                        <option value='12'>1year</option>    
+                    </select>                            
+                </li>
+                <li class="button">
+                    <input class="calculate" type="button" value="What's my interest?">
+                </li>
+            </ul>
+        </form>
+        <div class="results">
+            <p>Your interest is:</p>
+            <p class="Interest"></p>
+        </div>
+    </div>
+    <script src="scripts/index.js" defer></script>
+</body>
+</html>

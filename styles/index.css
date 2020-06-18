@@ -1,0 +1,123 @@
+body {
+    padding: 0%;
+    background-color: #ffffff;
+    margin: 0%;
+}
+.toolbar{
+    background-color: #FFFFFF;
+    flex-wrap: nowrap;
+    margin:0;
+    display: flex;
+    box-shadow: 0 4px 2px -2px rgb(189, 187, 187);
+}
+.toolbar .logo {
+    padding-left: 7%;
+    color: #144499;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+img {
+    padding:0;
+    display: inline;
+}
+h2 {
+    color: #144499;
+    padding-left: 1%;
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+    color:#144499;
+    padding-left: 1%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600px;
+}
+.card{
+    margin:0 auto;
+    width: 30%;
+    padding:1%;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    margin-left:1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:20px;
+    font-family: 'Montserrat', sans-serif;
+}
+h3 {
+    color: #144499;
+    padding-left: 1%;
+    font-family: 'Montserrat', sans-serif;
+}
+label {
+    color: #144499;
+    font-family: 'Montserrat', sans-serif;
+}
+#principle {
+    border: 1px solid  rgb(148, 145, 145);
+    outline: 0;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    border-radius: .5em;
+    padding:2%;
+}
+select {
+    align-self: end;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+select {
+	display: block;
+	font-size: 16px;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 700;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 60%;
+	max-width: 60%;
+	box-sizing: border-box;
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+	border-radius: .5em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+	background-size: .65em auto, 100%;
+}
+select::-ms-expand {
+	display: none;
+}
+select:hover {
+	border:1px solid rgb(163, 163, 163);
+}
+select:focus {
+	border-color: rgb(41, 40, 40);
+    outline: none;
+    border:1px solid;
+}
+select option {
+    font-weight:normal;
+    font-family: 'Montserrat',sans-serif;
+}
+ 
+.button input {
+    background-color: #144499;
+    color: #ffffff;
+    border-radius: .5em;
+    padding:2%;
+    margin-top:2%;
+    border: 1px solid #144499;
+}
+.button input:focus{
+    outline: none;
+}
+.results {
+    grid-column-start: 2;
+    grid-column-end:3;
+}
